@@ -22,6 +22,8 @@ class _SignUpEmailPasswordState extends State<SignUpEmailPassword> {
   TextEditingController Phonenumber = TextEditingController();
   TextEditingController Otp = TextEditingController();
 
+  // New Add
+
   String vid = "";
 
   @override
