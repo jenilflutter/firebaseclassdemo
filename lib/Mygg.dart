@@ -41,17 +41,16 @@ class _ViewDataState extends State<ViewData> {
   // FutureBuilder
   // FirebaseAnimated List
 
+
+
+
+
   Future<void> ViewFirebaseData() async {
     DatabaseReference ref = FirebaseDatabase.instance.ref("RoshniRealtime");
-
     list.clear();
-
       ref.onValue.listen((event) {
-
         list.clear();
-
         Map map = event.snapshot.value as Map;
-
         map.forEach((key, value) {
           setState(() {
             list.add(value);
